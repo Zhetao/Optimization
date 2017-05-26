@@ -195,7 +195,6 @@ model.physics('acpr').feature('nra1').selection.set([1 3 5]);
 
 model.mesh('mesh1').autoMeshSize(2);
 
-
 model.material('mat1').label('Air 1');
 model.material('mat1').propertyGroup('def').set('density', '1.25');
 model.material('mat1').propertyGroup('def').set('soundspeed', '343');
