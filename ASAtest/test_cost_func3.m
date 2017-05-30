@@ -1,6 +1,11 @@
-function [myCost, myFlag] = test_CostFunc(x)
+function [myCost, myFlag] = test_cost_func3(x)
 %if (x(1) <= 5)&&(x(1) >= -5)&&(x(2) <= 5)&&(x(2) >= -5)
-    myCost = crownedcross(x);
+    fileID = fopen('ASAtest.txt','a');
+    fmt = '%5f\n';
+    fprintf(fileID, fmt, x);
+    fclose(fileID);
+    
+    myCost = x^2;
     myFlag = 1;
 %else
  %   myCost = 9999;
