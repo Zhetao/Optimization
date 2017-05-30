@@ -1,6 +1,0 @@
-function [fstar,xstar,grad,hessian,state] = ASAtrans_main
-xinit = [2.8;8];
-xmin = [1;2];
-xmax = [20;20];
-xtype = [-1;-1];
-[fstar,xstar,grad,hessian,state] = asamin ('maximize', 'maxTrans0525', xinit, xmin, xmax, xtype)
